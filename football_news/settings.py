@@ -33,7 +33,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "elsa-mayora-footballnews.pbp.cs.ui.ac.id"]
-CSRF_TRUSTSED_ORIGINS = [
+CSRF_TRUSTED_ORIGINS = [
     "https://elsa-mayora-footballnews.pbp.cs.ui.ac.id"
 ]
 
@@ -51,7 +51,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -66,7 +65,8 @@ ROOT_URLCONF = 'football_news.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'BACKEND': 'django.template.backe'
+        'nds.django.DjangoTemplates',
         'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
