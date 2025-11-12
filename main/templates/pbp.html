@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ganti Gambar</title>
+</head>
+<body>
+  <img id="gambar" src="https://picsum.photos/id/1018/300/200" alt="Gambar 1">
+  <br>
+  <button onclick="gantiGambar()">Ganti Gambar</button>
+
+  <script>
+    let gambarSekarang = 1;
+
+    function gantiGambar() {
+      const gambar = document.getElementById("gambar");
+
+      if (gambarSekarang === 1) {
+        gambar.src = "https://picsum.photos/id/1025/300/200";
+        gambarSekarang = 2;
+      } else {
+        gambar.src = "https://picsum.photos/id/1018/300/200";
+        gambarSekarang = 1;
+      }
+    }
+  </script>
+</body>
+</html>
